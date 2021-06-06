@@ -1,0 +1,36 @@
+body .toolbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+body .toolbar-container .add-category-container {
+  padding: 0;
+  border: none;
+}
+body .toolbar-container .add-category-container input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #007bff;
+  background: #e5eeff;
+  padding: 0;
+  text-align: center;
+}
+body .toolbar-container .add-category-container input:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+body .toolbar-container .addBtn:hover {
+  color: #0074f0;
+}
+body .toolbar-container .toolbar {
+  margin-left: auto;
+}
+body .toolbar-container .toolbar .btn:disabled {
+  opacity: 0.25;
+}
+@media only screen and (max-width: 576px) {
+  body .toolbar-container .toolbar {
+    margin: auto;
+  }
+}

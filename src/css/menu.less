@@ -1,0 +1,111 @@
+@import '../constants.less';
+
+body{
+    
+    .menu-container{
+        
+        color: @gray;
+        font-weight: 600;
+        height:@_vh;
+        
+        overflow: hidden;
+        border: @border;
+        border-radius: 4px;
+        .card{
+             background: @whiteBlue;
+            border: none;
+            height: 100%;
+            .card-header{
+                background: @headerBackground;
+                height: @cardHeaderHeight;
+
+                button {
+                    background-color: @headerBackground;
+                    border-color: @primaryColor;
+                    border:none;
+                  &:focus,
+                  &:focus-within,
+                  &:active {
+                   box-shadow: none !important;
+                    background-color: @headerBackground !important;
+                    background: @headerBackground !important;
+                  }
+           
+                }
+
+            }
+            .addBtn{
+                padding:0 8px;
+                color: @primaryColor;
+                font-weight: 600;
+                border-color: @primaryColor;
+                border:none;
+                
+
+                &:hover{
+                    background: @headerBackground;
+                }
+            } 
+          
+        }
+         .list-group{
+             height: calc(100% - @listItemHeight);
+             overflow: auto;
+
+
+             .list-group-item{
+                 height: 48px;
+                 display: flex;
+                 align-items: center;    
+                 background: @whiteBlue;   
+                 margin: 8px 16px;      
+                 border:2px solid @border-color;
+                 border-radius: 2px;
+                 &.active{
+                    // background: @primaryColor;
+                    border-color:@primaryColor;
+                    color:@gray;                     
+                 }    
+                 &:hover{
+                     cursor: pointer;
+                     background: @whiteBlue_hover;
+                 }
+                //  &.active:hover{
+                //      background: @primaryColor_hover;
+                //  }
+                //  &:last-child{
+                //     border-bottom-width: 1px;
+                //     &.active{
+                //         border-bottom-width: 2px;
+                //     }
+                //  }
+                 &.add-category-container{
+                     height: unset;
+                     padding: 16px;
+                     &:hover{
+                         background: unset;
+                     }
+                     input{
+                         border-top:0;
+                         border-right:0;
+                         border-left: 0;
+                         margin-right: 16px;
+                     }
+                     button,input{
+                        &:focus,:focus-within,:active{
+                            box-shadow: none ;
+                        }
+                     }
+                 }
+             }
+         }
+         .empty-categories-msg{
+             display: flex;
+             flex-direction: column;
+             margin-top:56px;
+             justify-content:center;
+             align-items:center;
+         }
+    }
+}
+

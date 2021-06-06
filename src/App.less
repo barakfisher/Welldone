@@ -1,0 +1,78 @@
+@import "./constants.less";
+body {
+  
+  color: #666;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  .toast {
+    position: absolute;
+    z-index: 5;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    .toast-header {
+      font-size: 20px;
+      padding: 8px 36px;
+    }
+    .toast-body{
+      padding: 8px 36px;
+    }
+  }
+  .tooltip{
+    .tooltip-inner{
+      background-color: @primaryColor;
+      background: @primaryColor;      
+    }
+    .arrow:before{
+      border-top-color:@primaryColor;
+    }
+    
+
+  }
+  .App {
+    background-color: @whiteBlue;
+
+    .spinner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      .spinner-item {
+        margin-bottom: 20%;
+        width: 100px;
+        height: 100px;
+        border-width: 5px;
+      }
+    }
+    input {
+      &:focus {
+        background: @whiteBlue;
+      }
+      background: @whiteBlue;
+    }
+    .row {
+      margin: 0 !important;
+    }
+    .p-16 {
+      padding: @space1*2 0;
+    }
+    .p-0 {
+      padding: 0;
+    }
+    .ml-auto {
+      margin-left: auto;
+    }
+    .m-auto{
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+body {
+  color: #666;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+body .toast {
+  position: absolute;
+  z-index: 5;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body .toast .toast-header {
+  font-size: 20px;
+  padding: 8px 36px;
+}
+body .toast .toast-body {
+  padding: 8px 36px;
+}
+body .tooltip .tooltip-inner {
+  background-color: #007bff;
+  background: #007bff;
+}
+body .tooltip .arrow:before {
+  border-top-color: #007bff;
+}
+body .App {
+  background-color: #f4f8ff;
+}
+body .App .spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+body .App .spinner-container .spinner-item {
+  margin-bottom: 20%;
+  width: 100px;
+  height: 100px;
+  border-width: 5px;
+}
+body .App input {
+  background: #f4f8ff;
+}
+body .App input:focus {
+  background: #f4f8ff;
+}
+body .App .row {
+  margin: 0 !important;
+}
+body .App .p-16 {
+  padding: 16px 0;
+}
+body .App .p-0 {
+  padding: 0;
+}
+body .App .ml-auto {
+  margin-left: auto;
+}
+body .App .m-auto {
+  margin: auto;
+}

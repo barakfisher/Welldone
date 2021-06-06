@@ -1,0 +1,50 @@
+@import '../constants.less';
+
+body{
+    .toolbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        .add-category-container{     
+            padding: 0;
+            border:none;
+            input{
+                border:none;
+                border-radius: 0;
+                border-bottom: 1px solid @primaryColor;
+                background: @headerBackground;
+                padding: 0;
+                text-align: center;
+                &:focus{
+                    box-shadow:unset;
+                    outline: unset;
+                }
+            }
+            
+        }
+        .addBtn{
+            &:hover{
+                color:@primaryColor_hover;
+            }
+        }
+        .toolbar{
+            margin-left: auto;
+.btn{
+    &:disabled{
+        opacity:0.25;
+    }
+}
+            
+        }
+        @media only screen and (max-width: 576px) {
+            .toolbar {
+             margin: auto;
+            }
+          }
+
+        
+    }
+    
+
+}
